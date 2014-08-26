@@ -1,4 +1,4 @@
 cdp
 ===
 
-classic design pattern
+classic design pattern demo
