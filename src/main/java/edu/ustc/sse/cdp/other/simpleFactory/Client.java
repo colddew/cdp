@@ -2,12 +2,10 @@ package edu.ustc.sse.cdp.other.simpleFactory;
 
 public class Client {
 	
-	public static void main(String[] args) throws Exception {
+	public String invoke(String type) throws Exception {
 		
-		Interface instance = SimpleFactory.getInstance("A");
-		instance.test();
+		Interface instance = SimpleFactory.getInstance(type);
 		
-		instance = SimpleFactory.getInstance("B");
-		instance.test();
+		return instance.invoke();
 	}
 }
