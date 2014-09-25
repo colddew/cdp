@@ -3,15 +3,8 @@ package edu.ustc.sse.cdp.structure.facade;
 public class ConcreteModuleA implements ModuleA {
 
 	@Override
-	public String a1() {
+	public String invoke() {
 		
-		return "a1";
+		return "ConcreteModuleA";
 	}
-
-	@Override
-	public String a2() {
-		
-		return "a2";
-	}
-
 }
