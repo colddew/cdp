@@ -1,10 +1,10 @@
 package edu.ustc.sse.cdp.structure.facade;
 
-public class ConcreteModuleA implements ModuleA {
+public class ModuleBImpl implements IModuleB {
 
 	@Override
 	public String invoke() {
 		
-		return "ConcreteModuleA";
+		return "ConcreteModuleB";
 	}
 }

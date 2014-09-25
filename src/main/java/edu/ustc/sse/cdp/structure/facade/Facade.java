@@ -9,8 +9,8 @@ public class Facade {
 	
 	public String invoke() {
 		
-		ModuleA a = new ConcreteModuleA();
-		ModuleB b = new ConcreteModuleB();
+		IModuleA a = new ModuleAImpl();
+		IModuleB b = new ModuleBImpl();
 		
 		return a.invoke() + "," + b.invoke();
 	}

@@ -1,6 +1,6 @@
 package edu.ustc.sse.cdp.structure.facade;
 
-public interface ModuleA {
+public interface IModuleB {
 	
 	public String invoke();
 }
