@@ -3,8 +3,8 @@ package edu.ustc.sse.cdp.behavior.strategy;
 public class ConcreteStrategyA implements Strategy {
 
 	@Override
-	public String invoke() {
+	public String invoke(Context context) {
 		
-		return "ConcreteStrategyA";
+		return "ConcreteStrategyA" + "," + context.getParamater();
 	}
 }

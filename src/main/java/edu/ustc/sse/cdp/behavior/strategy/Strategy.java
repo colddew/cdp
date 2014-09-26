@@ -5,5 +5,5 @@ package edu.ustc.sse.cdp.behavior.strategy;
  */
 public interface Strategy {
 	
-	public String invoke();
+	public String invoke(Context context);
 }
