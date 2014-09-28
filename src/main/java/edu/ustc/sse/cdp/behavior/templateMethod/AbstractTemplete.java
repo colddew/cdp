@@ -5,7 +5,8 @@ package edu.ustc.sse.cdp.behavior.templateMethod;
  */
 public abstract class AbstractTemplete {
 	
-	public abstract String operation() throws Exception;
+	public abstract String operationA() throws Exception;
+	public abstract String operationB() throws Exception;
 	
 	public String hook() throws Exception {
 		
@@ -14,9 +15,10 @@ public abstract class AbstractTemplete {
 	
 	public String invoke() throws Exception {
 		
-		String operation = operation();
+		String operationA = operationA();
 		String hook = hook();
+		String operationB = operationB();
 		
-		return operation + "," + hook;
+		return operationA + "," + hook + "," + operationB;
 	}
 }

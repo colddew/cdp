@@ -9,9 +9,9 @@ public class AbstractTempleteTest {
 	public void testInvoke() throws Exception {
 		
 		AbstractTemplete a = new ConcreteClassA();
-		Assert.assertEquals("ConcreteClassA,hook", a.invoke());
+		Assert.assertEquals("ConcreteClassAoperationA,hook,ConcreteClassAoperationB", a.invoke());
 		
 		AbstractTemplete b = new ConcreteClassB();
-		Assert.assertEquals("ConcreteClassB,hook", b.invoke());
+		Assert.assertEquals("ConcreteClassBoperationA,hook,ConcreteClassBoperationB", b.invoke());
 	}
 }
