@@ -1,7 +1,7 @@
 package edu.ustc.sse.cdp.other.simpleFactory;
 
 /**
- * 简单工厂模式
+ * 简单工厂不是一种设计模式，可以视为一种编程习惯
  */
 public class SimpleFactory {
 	
