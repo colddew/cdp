@@ -3,7 +3,7 @@ package edu.ustc.sse.cdp.creation.factoryMethod;
 /**
  * 参数化的工厂方法可以集中管理需要创建的产品，通过继承实现扩展
  * 
- * 如果退化为只有公共的工厂方法则为简单工厂模式
+ * 如果只有公共的工厂方法，则退化为简单工厂模式
  */
 public class ParameterizedCreator {
 	
