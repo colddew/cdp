@@ -1,4 +1,4 @@
 cdp
 ===
 
-classic design pattern demo
+the implementation of the classic design pattern based on java
