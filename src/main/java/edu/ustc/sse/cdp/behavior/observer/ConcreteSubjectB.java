@@ -1,6 +1,8 @@
 package edu.ustc.sse.cdp.behavior.observer;
 
-public class ConcreteSubject extends Subject {
+import java.util.Observable;
+
+public class ConcreteSubjectB extends Observable {
 	
 	private String subjectStatus;
 	
@@ -13,6 +15,12 @@ public class ConcreteSubject extends Subject {
 		
 		this.subjectStatus = subjectStatus;
 		
+		this.setChanged();
+		
+		// 推模型
+		// this.notifyObservers(subjectStatus);
+		
+		// 拉模型
 		this.notifyObservers();
 	}
 }

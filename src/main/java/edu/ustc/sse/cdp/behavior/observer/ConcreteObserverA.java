@@ -1,6 +1,6 @@
 package edu.ustc.sse.cdp.behavior.observer;
 
-public class ConcreteObserver implements Observer {
+public class ConcreteObserverA implements Observer {
 	
 	private String observerStatus;
 	
@@ -12,6 +12,6 @@ public class ConcreteObserver implements Observer {
 	@Override
 	public void update(Subject subject) {
 		
-		this.observerStatus = ((ConcreteSubject) subject).getSubjectStatus();
+		this.observerStatus = ((ConcreteSubjectA) subject).getSubjectStatus();
 	}
 }

@@ -10,6 +10,14 @@ public class ClientTest {
 		
 		Client client = new Client();
 		
-		Assert.assertEquals("ConcreteSubjectStatus,ConcreteSubjectStatus", client.invokeCustomObserver());
+		Assert.assertEquals("CustomObserverStatus,CustomObserverStatus", client.invokeCustomObserver());
+	}
+	
+	@Test
+	public void testInvokeJDKObserver() throws Exception {
+		
+		Client client = new Client();
+		
+		Assert.assertEquals("JDKObserverStatus,JDKObserverStatus", client.invokeJDKObserver());
 	}
 }
