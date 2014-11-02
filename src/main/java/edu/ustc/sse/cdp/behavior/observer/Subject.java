@@ -17,6 +17,7 @@ public class Subject {
 		observers.remove(observer);
 	}
 	
+	// 通知的观察者可以根据条件进行控制
 	public void notifyObservers() {
 		
 		for(Observer observer : observers) {
