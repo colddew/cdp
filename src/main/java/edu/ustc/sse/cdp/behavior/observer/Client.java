@@ -31,6 +31,6 @@ public class Client {
 		subject.setSubjectStatus("JDKObserverStatus");
 		
 		return ((ConcreteObserverB) observerA).getObserverStatus() + "," 
-		+ ((ConcreteObserverB) observerB).getObserverStatus();
+			+ ((ConcreteObserverB) observerB).getObserverStatus();
 	}
 }
