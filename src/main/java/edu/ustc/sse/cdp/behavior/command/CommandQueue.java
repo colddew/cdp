@@ -14,15 +14,15 @@ public class CommandQueue {
 	
 	public static Command poll() {
 		
-		Command command = null;
-		
 		if(null != commands && commands.size() > 0) {
 			
-			command = commands.get(0);
+			Command command = commands.get(0);
 			
 			commands.remove(0);
+			
+			return command;
 		}
 		
-		return command;
+		return null;
 	}
 }
