@@ -24,26 +24,26 @@ public class Client {
 		Command commandC = new ConcreteCommand(executorC);
 		CommandQueue.offer(commandC);
 		
-		StringBuffer commands = new StringBuffer();
+		StringBuffer result = new StringBuffer();
 		
 		Command command = CommandQueue.poll();
 		while(null != command) {
 			
-			commands.append(command.execute()).append(",");
+			result.append(command.execute()).append(",");
 			
 			command = CommandQueue.poll();
 		}
 		
-		return removeLastComma(commands.toString());
+		return removeLastComma(result.toString());
 	}
 	
-	private String removeLastComma(String commands) {
+	private String removeLastComma(String result) {
 		
-		if(null != commands && commands.endsWith(",")) {
+		if(null != result && result.endsWith(",")) {
 			
-			return commands.substring(0, commands.length() - 1);
+			return result.substring(0, result.length() - 1);
 		}
 		
-		return commands;
+		return result;
 	}
 }
