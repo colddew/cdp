@@ -3,6 +3,9 @@ package edu.ustc.sse.cdp.structure.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 组合对象
+ */
 public class Composite extends Component {
 	
 	private String name;

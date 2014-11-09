@@ -1,5 +1,8 @@
 package edu.ustc.sse.cdp.structure.composite;
 
+/**
+ * 叶子对象
+ */
 public class Leaf extends Component {
 	
 	private String name;
