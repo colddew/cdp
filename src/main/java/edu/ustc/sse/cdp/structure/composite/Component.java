@@ -32,15 +32,13 @@ public abstract class Component {
 	@Override
 	public boolean equals(Object obj) {
 		
-		if(obj instanceof Component) {
+		if(null != obj && null != name && obj instanceof Component) {
 			
-			return false;
-		}
-		
-		Component component = (Component) obj;
-		if(null != name && name.equals(component.name)) {
-			
-			return true;
+			Component component = (Component) obj;
+			if(name.equals(component.name)) {
+				
+				return true;
+			}
 		}
 		
 		return false;
