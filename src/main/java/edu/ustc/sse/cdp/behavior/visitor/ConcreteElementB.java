@@ -3,7 +3,7 @@ package edu.ustc.sse.cdp.behavior.visitor;
 public class ConcreteElementB implements Element {
 	
 	@Override
-	public String accept(Visitor visitor) {
+	public Object accept(Visitor visitor) {
 		
 		return visitor.visitConcreteElementB(this);
 	}

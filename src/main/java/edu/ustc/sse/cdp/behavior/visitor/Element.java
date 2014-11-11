@@ -5,5 +5,5 @@ package edu.ustc.sse.cdp.behavior.visitor;
  */
 public interface Element {
 	
-	public String accept(Visitor visitor);
+	public Object accept(Visitor visitor);
 }
