@@ -2,11 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>edu.ustc.sse.cdp</groupId>
 	<artifactId>cdp</artifactId>
-	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>cdp Maven Webapp</name>
+	<packaging>jar</packaging>
+	<version>1.0.0</version>
+	
+	<name>classic design pattern</name>
 	<url>http://maven.apache.org</url>
 	
 	<dependencies>
