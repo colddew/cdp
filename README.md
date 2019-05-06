@@ -1,4 +1,4 @@
-cdp
+Brief
 ===
 
-the reference implementation of the classic design pattern based on java
+The reference implementation of the classic design pattern based on java language
